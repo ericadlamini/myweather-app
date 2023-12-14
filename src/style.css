@@ -1,0 +1,14 @@
+body {
+  background-image: url("/Users/ericadlamini/Documents/myweather-app/cloudy.jpg");
+  font-family: "Roboto", sans-serif;
+}
+
+.myweather-app {
+  background-color: aliceblue;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 0 30px 40px rgb(65, 50, 100, 0.4);
+  border-radius: 15px;
+  opacity: 50%;
+}
