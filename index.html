@@ -12,12 +12,13 @@
   <body>
     <div class="myweather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -27,7 +28,7 @@
           <div class="weather-metrics">  
             <div class="temp-degrees">10</div>
             <div class="temp-units">°C</div>
-            <h1 class="weather-city">Cape Town</h1>
+            <h1 class="weather-city" id="city">Cape Town</h1>
         </div>
         <div class="weather-details">
         <div class="weather-icon">🌦️</div> 
@@ -84,5 +85,6 @@
     </div>
       
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
