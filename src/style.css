@@ -1,6 +1,6 @@
 body {
   background-color: #f6f4fa;
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
   width: 100%;
 }
 
@@ -81,6 +81,7 @@ a {
 .temp-degrees {
   position: relative;
   top: 40px;
+  left: 50px;
 }
 
 .weather-icon {
@@ -93,13 +94,14 @@ a {
 h1.weather-city {
   position: relative;
   top: 105px;
-  left: -110px;
+  left: -90px;
 }
 
 .temp-units {
   font-size: 30px;
   position: relative;
   top: 50px;
+  left: 50px;
 }
 
 p.detailed-weather {
