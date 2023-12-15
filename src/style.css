@@ -1,21 +1,22 @@
 body {
-  background-image: url("/Users/ericadlamini/Documents/myweather-app/cloudy.jpg");
+  background-color: #f6f4fa;
   font-family: "Roboto", sans-serif;
   width: 100%;
 }
 
 .myweather-app {
-  background-color: #ffff;
-  background-image: url("/Users/ericadlamini/Documents/myweather-app/cloudy.jpg");
+  background-color: #ffffff;
+  color: #41444b;
   max-width: 600px;
   margin: 30px auto;
   padding: 30px;
-  box-shadow: 0 30px 40px rgb(65, 50, 100, 0.4);
+  box-shadow: 0 30px 40px rgb(65, 50, 100, 0.08);
   border-radius: 15px;
+  border: 1px solid #f6f4fa;
 }
 
 .search-form-input {
-  background-color: white;
+  background-color: #f6f4fa;
   border: none;
   border-radius: 5px;
   font-size: 15px;
@@ -24,7 +25,8 @@ body {
 }
 
 .search-form-button {
-  background-color: #ffff;
+  background-color: #885df1;
+  color: white;
   padding: 15px 20px;
   border: none;
   border-radius: 5px;
@@ -32,31 +34,31 @@ body {
 }
 
 header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #f6f4fa;
   padding: 10px 30px;
 }
 
 footer {
-  border-top: 1px solid black;
+  border-top: 1px solid #f6f4fa;
   padding: 10px 30px;
   text-align: center;
   font-size: 12px;
 }
 
 a {
-  color: darkred;
+  color: #885df1;
   text-decoration: none;
 }
 .data-info {
   display: flex;
   justify-content: space-between;
-
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #f6f4fa;
 }
 
 .weather-city {
   font-size: 37px;
   line-height: 48px;
+  display: block;
 }
 
 .detailed-weather {
@@ -76,13 +78,39 @@ a {
 .temp-degrees {
   font-size: 80px;
 }
+.temp-degrees {
+  position: relative;
+  top: 40px;
+}
 
 .weather-icon {
-  font-size: 50px;
-  margin-top: 20px;
+  font-size: 100px;
+  position: relative;
+  top: 10px;
+  left: 40px;
+}
+
+h1.weather-city {
+  position: relative;
+  top: 105px;
+  left: -110px;
 }
 
 .temp-units {
-  margin-top: 16px;
-  font-size: 20px;
+  font-size: 30px;
+  position: relative;
+  top: 50px;
+}
+
+p.detailed-weather {
+  position: relative;
+  top: -15px;
+}
+
+.week-forecast {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px;
 }
