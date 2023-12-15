@@ -3,7 +3,28 @@ body {
   font-family: "Quicksand", sans-serif;
   width: 100%;
 }
+header {
+  border-bottom: 1px solid #f6f4fa;
+  padding: 10px 30px;
+}
 
+footer {
+  border-top: 1px solid #f6f4fa;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 12px;
+}
+
+a {
+  color: #885df1;
+  text-decoration: none;
+}
+
+h1.weather-city {
+  position: relative;
+  top: 105px;
+  left: -90px;
+}
 .myweather-app {
   background-color: #ffffff;
   color: #41444b;
@@ -33,22 +54,11 @@ body {
   font-size: 15px;
 }
 
-header {
-  border-bottom: 1px solid #f6f4fa;
-  padding: 10px 30px;
+p.detailed-weather {
+  position: relative;
+  top: -15px;
 }
 
-footer {
-  border-top: 1px solid #f6f4fa;
-  padding: 10px 30px;
-  text-align: center;
-  font-size: 12px;
-}
-
-a {
-  color: #885df1;
-  text-decoration: none;
-}
 .data-info {
   display: flex;
   justify-content: space-between;
@@ -67,7 +77,7 @@ a {
 }
 
 .detailed-weather strong {
-  color: darkred;
+  color: #885df1;
   font-weight: 700;
 }
 
@@ -78,6 +88,7 @@ a {
 .temp-degrees {
   font-size: 80px;
 }
+
 .temp-degrees {
   position: relative;
   top: 40px;
@@ -91,22 +102,11 @@ a {
   left: 40px;
 }
 
-h1.weather-city {
-  position: relative;
-  top: 105px;
-  left: -90px;
-}
-
 .temp-units {
   font-size: 30px;
   position: relative;
   top: 50px;
   left: 50px;
-}
-
-p.detailed-weather {
-  position: relative;
-  top: -15px;
 }
 
 .week-forecast {
