@@ -20,11 +20,6 @@ a {
   text-decoration: none;
 }
 
-h1.weather-city {
-  position: relative;
-  top: 105px;
-  left: -90px;
-}
 .myweather-app {
   background-color: #ffffff;
   color: #41444b;
@@ -65,12 +60,6 @@ p.detailed-weather {
   border-bottom: 1px solid #f6f4fa;
 }
 
-.weather-city {
-  font-size: 37px;
-  line-height: 48px;
-  display: block;
-}
-
 .detailed-weather {
   font-style: 16px;
   line-height: 20px;
@@ -84,29 +73,33 @@ p.detailed-weather {
 .weather-metrics {
   display: flex;
 }
-
+.weather-city {
+  display: block;
+  position: relative;
+  top: 105px;
+  left: -80px;
+  font-size: 37px;
+  line-height: 48px;
+}
 .temp-degrees {
   font-size: 80px;
-}
-
-.temp-degrees {
   position: relative;
   top: 40px;
-  left: 50px;
+  left: 30px;
 }
 
 .weather-icon {
-  font-size: 100px;
+  width: 100px;
   position: relative;
   top: 10px;
-  left: 40px;
+  left: 55px;
 }
 
 .temp-units {
   font-size: 30px;
   position: relative;
   top: 50px;
-  left: 50px;
+  left: 36px;
 }
 
 .week-forecast {
