@@ -17,7 +17,6 @@ footer {
 
 a {
   color: #885df1;
-  text-decoration: none;
 }
 
 .myweather-app {
@@ -76,32 +75,30 @@ p.detailed-weather {
 .weather-city {
   display: block;
   position: relative;
-  top: 105px;
-  left: -80px;
+  top: 86px;
+  left: -70px;
   font-size: 37px;
   line-height: 48px;
 }
 .temp-degrees {
   font-size: 80px;
   position: relative;
-  top: 40px;
+  top: 10px;
   left: 30px;
 }
 
+.temp-units {
+  font-size: 30px;
+  position: relative;
+  top: 30px;
+  left: 36px;
+}
 .weather-icon {
   width: 100px;
   position: relative;
   top: 10px;
   left: 55px;
 }
-
-.temp-units {
-  font-size: 30px;
-  position: relative;
-  top: 50px;
-  left: 36px;
-}
-
 .week-forecast {
   display: flex;
   justify-content: space-between;
