@@ -73,12 +73,10 @@ p.detailed-weather {
   display: flex;
 }
 .weather-city {
-  display: block;
   position: relative;
   top: 86px;
   left: -70px;
   font-size: 37px;
-  line-height: 48px;
 }
 .temp-degrees {
   font-size: 80px;
