@@ -99,8 +99,12 @@ p.detailed-weather {
 }
 .week-forecast {
   display: flex;
-  justify-content: space-between;
   justify-content: space-around;
   text-align: center;
   margin: 20px;
+}
+
+.weather-temp-icon {
+  font-size: 30px;
+  margin: 15px;
 }
