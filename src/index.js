@@ -18,6 +18,7 @@ function refreshWeather(response) {
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
 
   getForecast(response.data.city);
+  console.log(getForecast);
 }
 
 function formatDate(date) {
@@ -61,27 +62,25 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHtml = "";
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
-
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `<div class="day-one">
-<div class="weather-date">${day}</div>
+<div class="weather-date">Wed</div>
 <div class="weather-temp-icon">🌦️</div>
-<div class="weather-temp>"><span class="weather-temp-high">8°</span> <span class="weather-temp-min">12°</span> </div>
-</div>`;
+<div class="weather-temp>"><span class="weather-temp-high">${day.temperaure.maximum}°</span> <span class="weather-temp-min">${day.temperature.minimum}</span>°</div>
+</div>
+`;
   });
+
   forecastElement.innerHTML = forecastHtml;
 }
 
 function getForecast(city) {
   let apiKey = "1fea1990c3a20o02b5dea044tb336292";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apikey}&unit=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
 
   axios(apiUrl).then(displayForecast);
 }
 
 searchCity("Cape Town");
-displayForecast();
-getForecast("Cape Town");
