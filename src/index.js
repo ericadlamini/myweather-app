@@ -58,8 +58,6 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", updateCity);
 
 function displayForecast(response) {
-  let forecastElement = document.querySelector("#forecast");
-
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day) {
@@ -68,11 +66,15 @@ function displayForecast(response) {
       `<div class="day-one">
 <div class="weather-date">Wed</div>
 <div class="weather-temp-icon">🌦️</div>
-<div class="weather-temp>"><span class="weather-temp-high">${day.temperaure.maximum}°</span> <span class="weather-temp-min">${day.temperature.minimum}</span>°</div>
+<div class="weather-temp>"><span class="weather-temp-high">${Math.round(
+        day.temperature.maximum
+      )}°</span> <span class="weather-temp-min">${Math.round(
+        day.temperature.minimum
+      )}</span>°</div>
 </div>
 `;
   });
-
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 
