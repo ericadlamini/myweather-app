@@ -18,7 +18,6 @@ function refreshWeather(response) {
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
 
   getForecast(response.data.city);
-  console.log(getForecast);
 }
 
 function formatDate(date) {
@@ -62,6 +61,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHtml = "";
+
   response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
